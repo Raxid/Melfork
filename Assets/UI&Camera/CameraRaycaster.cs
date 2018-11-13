@@ -54,6 +54,7 @@ public class CameraRaycaster : MonoBehaviour
         // Otherwise return background hit
         rayHit.distance = distanceToBackground;
         layerRaycastHit = Layer.RaycastEndStop;
+        onLayerChange(layerHit);
     }
 
     RaycastHit? RaycastForLayer(Layer layer)
